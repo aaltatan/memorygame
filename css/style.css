@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px !important;
+}
+
+.no-clicking {
+  pointer-events: none;
+}
+
+.controls {
+  background-color: #252525a4;
+  width: 100vw;
+  height: 100vh;
+}
+
+.box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 1px solid lightgrey;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: 500ms;
+}
+.flip,
+.guessed {
+  transform: rotateY(180deg);
+  pointer-events: none;
+  cursor: no-drop;
+}
+
+.face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  backface-visibility: hidden;
+}
+.front {
+  border: 4px solid black;
+  background-color: #252525;
+}
+.back {
+  transform: rotateY(180deg);
+}

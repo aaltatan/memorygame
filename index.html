@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <div class="game">
+      <div
+        class="controls position-fixed start-0 top-0 w-100 h-100 d-flex justify-content-center align-items-center z-3"
+      >
+        <span
+          class="text-capitalize btn btn-primary rounded-pill px-3 py-1 fs-3"
+          >new game</span
+        >
+      </div>
+      <div class="container">
+        <div
+          class="tries my-3 d-flex justify-content-between align-items-center flex-wrap px-1"
+        >
+          <p
+            class="welcome px-3 py-1 rounded-pill text-white fw-bold bg-primary"
+          >
+            Hello <span></span>
+          </p>
+          <p
+            class="wrong-tries px-3 py-1 rounded-pill bg-danger text-white fw-bold text-capitalize"
+          >
+            wrong tries: <span>0</span>
+          </p>
+        </div>
+        <div class="row g-3">
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <div class="box" data-tech="python">
+              <div class="fs-1 face front text-white">?</div>
+              <div class="img face back">
+                <img
+                  src="./imgs/icons8-python-96.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <div class="box" data-tech="python">
+              <div class="fs-1 face front text-white">?</div>
+              <div class="img face back">
+                <img
+                  src="./imgs/icons8-python-96.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <div class="box" data-tech="bs">
+              <div class="fs-1 face front text-white">?</div>
+              <div class="img face back">
+                <img
+                  src="./imgs/icons8-bootstrap-96.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <div class="box" data-tech="bs">
+              <div class="fs-1 face front text-white">?</div>
+              <div class="img face back">
+                <img
+                  src="./imgs/icons8-bootstrap-96.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <div class="box" data-tech="css">
+              <div class="fs-1 face front text-white">?</div>
+              <div class="img face back">
+                <img src="./imgs/icons8-css-96.png" alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <div class="box" data-tech="css">
+              <div class="fs-1 face front text-white">?</div>
+              <div class="img face back">
+                <img src="./imgs/icons8-css-96.png" alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <div class="box" data-tech="html">
+              <div class="fs-1 face front text-white">?</div>
+              <div class="img face back">
+                <img src="./imgs/icons8-html-96.png" alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <div class="box" data-tech="html">
+              <div class="fs-1 face front text-white">?</div>
+              <div class="img face back">
+                <img src="./imgs/icons8-html-96.png" alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <div class="box" data-tech="js">
+              <div class="fs-1 face front text-white">?</div>
+              <div class="img face back">
+                <img
+                  src="./imgs/icons8-javascript-96.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <div class="box" data-tech="js">
+              <div class="fs-1 face front text-white">?</div>
+              <div class="img face back">
+                <img
+                  src="./imgs/icons8-javascript-96.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <div class="box" data-tech="sql">
+              <div class="fs-1 face front text-white">?</div>
+              <div class="img face back">
+                <img
+                  src="./imgs/icons8-mysql-logo-96.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <div class="box" data-tech="sql">
+              <div class="fs-1 face front text-white">?</div>
+              <div class="img face back">
+                <img
+                  src="./imgs/icons8-mysql-logo-96.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <div class="box" data-tech="react">
+              <div class="fs-1 face front text-white">?</div>
+              <div class="img face back">
+                <img
+                  src="./imgs/icons8-react-native-96.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <div class="box" data-tech="react">
+              <div class="fs-1 face front text-white">?</div>
+              <div class="img face back">
+                <img
+                  src="./imgs/icons8-react-native-96.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <div class="box" data-tech="sass">
+              <div class="fs-1 face front text-white">?</div>
+              <div class="img face back">
+                <img src="./imgs/icons8-sass-96.png" alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <div class="box" data-tech="sass">
+              <div class="fs-1 face front text-white">?</div>
+              <div class="img face back">
+                <img src="./imgs/icons8-sass-96.png" alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <div class="box" data-tech="tailwind">
+              <div class="fs-1 face front text-white">?</div>
+              <div class="img face back">
+                <img
+                  src="./imgs/icons8-tailwindcss-96.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <div class="box" data-tech="tailwind">
+              <div class="fs-1 face front text-white">?</div>
+              <div class="img face back">
+                <img
+                  src="./imgs/icons8-tailwindcss-96.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <div class="box" data-tech="vue">
+              <div class="fs-1 face front text-white">?</div>
+              <div class="img face back">
+                <img
+                  src="./imgs/icons8-vue-js-96.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <div class="box" data-tech="vue">
+              <div class="fs-1 face front text-white">?</div>
+              <div class="img face back">
+                <img
+                  src="./imgs/icons8-vue-js-96.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <audio id="success" src="./audio/success.mp3" preload="auto"></audio>
+    <audio id="failed" src="./audio/failed.mp3" preload="auto"></audio>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
